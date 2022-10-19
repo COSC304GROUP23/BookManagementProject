@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class PublicLibrary {
     private String _name;
-    private String _address;
     public ArrayList<User> Users = new ArrayList<>();
 
     public ArrayList<Book> Books = new ArrayList<>();
@@ -17,22 +16,6 @@ public class PublicLibrary {
 
     public void set_name(String _name) {
         this._name = _name;
-    }
-
-    public String get_address() {
-        return _address;
-    }
-
-    public void set_address(String _address) {
-        this._address = _address;
-    }
-
-    public ArrayList<User> getUsers() {
-        return Users;
-    }
-
-    public Admin getAdmin() {
-        return admin;
     }
 
     public void addUser(User user){

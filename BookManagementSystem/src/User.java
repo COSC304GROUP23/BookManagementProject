@@ -6,7 +6,7 @@ public class User {
     private String _name;
     private String _password;
 
-    private int bookLimit = 3;
+    private int _bookLimit = 3;
     private ArrayList<Book> books = new ArrayList<>();
 
     public ArrayList<Book> getBooks() {
@@ -37,7 +37,7 @@ public class User {
     }
 
     public void addBookToTheUser(Book book){
-        if (books.size() < bookLimit){
+        if (books.size() < _bookLimit){
             books.add(book);
             book.set_inventory(book.get_inventory()-1);
             System.out.println("-------------------------------");
